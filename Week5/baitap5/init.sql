@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS votes (
+    id SERIAL PRIMARY KEY,
+    option_name VARCHAR(255) UNIQUE,
+    count INT DEFAULT 0
+);

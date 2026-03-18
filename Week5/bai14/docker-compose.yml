@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nginx1:
+    image: nginx:latest
+    networks:
+      - mynetwork
+
+  nginx2:
+    image: nginx:latest
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

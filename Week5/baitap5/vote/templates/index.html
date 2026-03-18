@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting App</title>
+</head>
+<body>
+    <h1>Vote for your favorite option</h1>
+    <form method="POST">
+        <input type="radio" name="vote" value="option1"> Option 1<br>
+        <input type="radio" name="vote" value="option2"> Option 2<br>
+        <input type="submit" value="Vote">
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
